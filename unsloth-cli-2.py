@@ -396,7 +396,7 @@ def run_quantize(args):
         args: Command-line arguments
     
     Returns:
-        True if quantization was successful, False otherwise
+        True if quantization was successful, False otherwise.
     """
     try:
         logger.info(f"Quantizing model from {args.input_path} to {args.output_path}")
