@@ -651,8 +651,8 @@ if __name__ == "__main__":
         
         model_dir = args.model_name if os.path.isdir(args.model_name) else os.path.dirname(args.model_name)
         logger.info(f"Model directory contents: {os.listdir(model_dir)}")
-        
         config_file = os.path.join(model_dir, "config.json")
+       
         if os.path.exists(config_file):
             with open(config_file, 'r') as f:
                 config = json.load(f)
@@ -670,11 +670,13 @@ if __name__ == "__main__":
             logger.error(result["error"])
         else:
             logger.info(result["message"])
+           
     elif args.command == "dequantize":
         success = run_dequantize(args)
         if not success:
             logger.error("Dequantization failed")
             exit(1)
+           
     elif args.command == "quantize":
         success = run_quantize(args)
         if not success:
