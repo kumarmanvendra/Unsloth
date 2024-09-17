@@ -33,6 +33,8 @@ Key Features:
 4. Merging and Adaptation:
    - Merge LoRA adapters with base models
    - Dequantization options for merging quantized models
+   #TODO @9/17/2024 ADD LoRA+LoRA and Model+Model Merging Methods (lazy Merge kit): To merge fully 
+   #TODO @9/17/2024 ADD DIRECT QUANTIZER FOR SAFETENSOR: To quantize safetensors and support both gguf and safetensors
 
 5. Deployment and Sharing:
    - GGUF conversion for optimized model deployment
